@@ -62,8 +62,8 @@ a{
 .nav_left p::first-letter{
         color: var(--nav-color);
         background-color: white;
-        padding: 1px 7px;
-        margin: 0 4px;
+        padding: 1px 1px;
+        margin: 0 3px;
 }
 .nav_left ul li img{
         width: 28px;
@@ -495,6 +495,7 @@ background: #111;
     margin-top: 5px;
     padding: 10px;
     font-size: 12px;
+
     left: 0;
     right: 0;
     width: fit-content;
