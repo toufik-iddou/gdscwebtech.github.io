@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="welcome to gdsc WebTech!">
+    <meta property="og:image" content="data:image/png;base64,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"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/793cee9fd7.js" crossorigin="anonymous"></script>
+    <title>facebook</title>
+</head>
+
+<body  >
+
+    <nav>
+        <div class="nav_left">
+            <p>facebook</p>
+            <ul>
+                <li tooltip="notification"><img src="images/notification.png" alt=""></li>
+                <li tooltip="inbox"><img src="images/inbox.png" alt=""></li>
+                <li tooltip="watch"><img src="images/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="showNavMenu()">
+                <img src="images/departements 1X1/GDSC.jpg" alt="">
+            </div>
+        </div>
+            <!-- nav-menu=========================== -->
+        <div class="nav-menu">
+            <div id="theme-switch" >
+                <span></span>
+            </div>
+            <div class="user-profile">
+                <img src="images/departements 1X1/GDSC.jpg" alt="">
+                <div>
+                    <p>GDSC</p>
+                    <a href="#">See your profile</a>
+                </div>
+            </div>
+            <div class="menu-items">
+                <i class="fa-solid fa-gear"></i>
+                <div>
+                    <p>Setting & privacy</p>
+                </div>
+            </div>
+            <div class="menu-items">
+                <i class="fa-solid fa-circle-info"></i>
+                <div>
+                    <p>Help & support</p>
+                </div>
+            </div>
+            <div class="menu-items">
+                <i class="fa-solid fa-comment"></i>
+                <div>
+                    <p>Give Feedback</p>
+                </div>
+            </div>
+            <div class="menu-items">
+                <i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i>
+                <div>
+                    <p>Log Out</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- left-side===================== -->
+        <div class="left-side-bar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="">Latest News</a>
+                <a href="#"><img src="images/friends.png" alt="">Friends</a>
+                <a href="#"><img src="images/group.png" alt="">Group</a>
+                <a href="#"><img src="images/marketplace.png" alt="">Marketplace</a>
+                <a href="#"><img src="images/watch.png" alt="">watch</a>
+                <a href="#">See More</a>
+
+            </div>
+            <div class="shortcut_links">
+                <p>Your shortcut</p>
+                <a href="#"><img src="images/departements 1x1/web-developement.png" alt="">Web Developement</a>
+                <a href="#"><img src="images/departements 1x1/android-development .png" alt="">Android Development</a>
+                <a href="#"><img src="images/departements 1x1/machin-learning.png" alt="">Machine Learning</a>
+                <a href="#"><img src="images/departements 1x1/google-cloud.png" alt="">cloud engineer</a>
+                <a href="#"><img src="images/departements 1x1/cross-platform.png" alt="">cross platform</a>
+                <a href="#"><img src="images/departements 1x1/ux-design.png" alt="">ux design</a>
+                <a href="#"><img src="images/departements 1x1/graphic-design.png" alt="">graphic design</a>
+                <a href="#"><img src="images/departements 1x1/human-resources.png" alt="">human resources</a>
+                <a href="#"><img src="images/departements 1x1/external-relationship.png" alt="">external
+                    relationship</a>
+                <a href="#"><img src="images/departements 1x1/finance-logistics.png" alt="">finance logistics</a>
+
+            </div>
+        </div>
+        <!-- main-content===================== -->
+        <div class="main-content">
+            <div class="story-bar">
+                <div class="story" id="story-1">
+                    <img src="images/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story" id="story-2">
+                    <img src="images/departements 1x1/web-developement.png" alt="">
+                    <p>Web Developement</p>
+                </div>
+                <div class="story" id="story-3">
+                    <img src="images/departements 1x1/android-development .png" alt="">
+                    <p>Android Development</p>
+                </div>
+                <div class="story" id="story-4">
+                    <img src="images/departements 1X1/machin-learning.png" alt="">
+                    <p>Machin Learning</p>
+                </div>
+                <div class="story" id="story-5">
+                    <img src="images/departements 1X1/cross-platform.png" alt="">
+                    <p>Cross Platform</p>
+                </div>
+                <div></div>
+            </div>
+
+            <div class="add-post-container">
+                <div class="user-profile">
+                    <img src="images/departements 1X1/GDSC.jpg" alt="">
+                    <div>
+                        <p>GDSC</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="what in your mind, GDSC"></textarea>
+                    <div class="add-post-link">
+                        <a href="#"><i class="fa-solid fa-video" style="color:rgb(231, 3, 3)"></i> Live Video</a>
+                        <a href="#"><i class="fa-solid fa-camera" style="color:rgb(0, 175, 38)"></i> Photo/Video</a>
+                        <a href="#"><i class="fa-regular fa-face-smile" style="color:rgb(255, 174, 0)"></i>
+                            Feeling/Avtivity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/departements 1X1/GDSC.jpg" alt="">
+                        <div>
+                            <p>GDSC</p>
+                            <span>March 22 2022, 11:00 am <i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis" style="color:#9a9a9a "></i></a>
+                </div>
+                <p class="post-text"><span>gdscenst</span> what? <span>WebTech</span> another time? yes yes! didn't
+                    finish yet &#128525;&#128293; its sequel is very close &#128293;. Don't hesitate to check our
+                    website and get your ticket to be part of us this Saturday &#10024;Link in bio. <br> <a
+                        href="#">#google</a> <a href="#">#gdsc</a></p>
+                <img src="images/post-1.jpg" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="reactions-icons">
+                        <div><i class="fa-solid fa-thumbs-up" style="color: #1876f2"></i> 231</div>
+                        <div><i class="fa-solid fa-comments"></i> 96</div>
+                        <div><i class="fa-solid fa-share"></i> 52</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/departements 1X1/GDSC.jpg" alt="">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/departements 1X1/GDSC.jpg" alt="">
+                        <div>
+                            <p>GDSC</p>
+                            <span>March 27 2022, 11:00 am <i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis" style="color:#9a9a9a "></i></a>
+                </div>
+                <p class="post-text"><span>gdscenst</span>Dear Community 📢
+                    We finally got there , We share with you the Agenda of our long-awaited WebTech event which will
+                    take place tomorrow Saturday,19th November at the Higher National School of Technology ENST ✨🔥🔥
+                    See you there 😍<br> <a href="#">#google</a> <a href="#">#gdsc</a></p>
+                <img src="images/post-2.jpg" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="reactions-icons">
+                        <div><i class="fa-solid fa-thumbs-up" style="color: #1876f2"></i> 202</div>
+                        <div><i class="fa-solid fa-comments"></i> 95</div>
+                        <div><i class="fa-solid fa-share"></i> 45</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/departements 1X1/GDSC.jpg" alt="">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button">Show More</button>
+
+        </div>
+        <!-- right-side===================== -->
+        <div class="right-side-bar">
+
+            <div class="sidebar-title">
+                <h4>
+                    Events
+                </h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>
+                    Advertisement
+                </h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" alt="" class="sidebar_ads">
+            <div class="sidebar-title">
+                <h4>
+                    Conversation
+                </h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="">
+                    <img src="images/member-2.png" alt="">
+                </div>
+                <p>iddou toufik</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="">
+                </div>
+                <p>mohamed</p>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright 2021 - GDSC WebTech&#xA9;</p>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+
+</html>
